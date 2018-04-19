@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class='form'>
+    <form action='{{ url_for("game") }}' method='POST'>
+        x:
+        <select name='x'>
+            {% for i in range(1, 9) %}
+            <option value="{{ i }}">{{ i }}</option>
+            {% endfor %}
+        </select><br><br>
+        y:
+        <select name='y'>
+                {% for i in range(2, 9, 2) %}
+                <option value="{{ i }}">{{ i }}</option>
+                {% endfor %}
+        </select><br><br>
+
+        <button type='submit'>Generate board</button>
+    </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    background-image: url("https://datenlabor.info/wp-content/uploads/2017/10/two-photo-u-traditionalonlyinfo-traditionalonlyinfo-vintage-wood-table-texture-en-cutting-board-s-pinterest-en-vintage-wood-table-texture-cutting-board-s.jpg")
+}
+
+/* LAYOUT */
+.title {
+    background-color: white;
+    font-family: monospace;
+    white-space: pre;
+    text-align: center;
+}
+
+.title p {
+    margin-top: 0;
+}
+
+/* INDEX */
+.form {
+    background-color: white;
+    display: inline-block;
+    float: right;
+    position: relative;
+    right: 45%;
+    border: 5px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 15px;
+    width: 200px;
+}
+
+/* GAME */
+.board {
+    margin-top: 50px;
+}
+
+table {
+    margin:auto;
+}
+
+.card {
+    background-color: whitesmoke;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+i {
+    font-size: 2em;
+    color: grey;
+}
