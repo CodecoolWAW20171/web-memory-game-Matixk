@@ -1,19 +1,25 @@
 {% extends "layout.html" %}
 
 {% block body %}
+<a href="{{ url_for('index') }}"><button>Back</button></a>
 <div class='board'>
-        
+
+<input type="hidden" id="x" value="{{ x }}">
+<input type="hidden" id="y" value="{{ y }}">
+
 <table>
-    {% for i in range(x) %}
+    <tbody>
+    {% for row in range(x) %}
         <tr>
-            {% for j in range(y) %}
-            <td class='card'>
-                <i class='fas fa-question-circle' id='font'></i>
+            {% for column in range(y) %}
+            <td class='card' id='{{ row }}, {{ column }}'>
+                <i class='fas fa-question-circle' id='front'></i>
                 <i class='' id='back' style='display:none;'></i>
             </td>
             {% endfor %}
         </tr>
     {% endfor %}
+    </tbody>
 </table>
 
 </div>
